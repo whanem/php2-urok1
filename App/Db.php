@@ -9,7 +9,7 @@ class Db
     public function __construct()
     {
         $this->dbh = new \PDO(
-            'mysql:host=localhost; dbname=About',
+            'mysql:host=localhost; dbname=BlogSite',
             'root',
             ''
         );
