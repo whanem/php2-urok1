@@ -10,11 +10,11 @@
 <body>
 <?php ?>
     <p style="font: 700 20px sans-serif;">
-        <?php echo $Article->title; ?>
+        <?php echo $article->title; ?>
     </p>
-    <p><?php echo $Article->content; ?></p>
+    <p><?php echo $article->content; ?></p>
     <p style="font: 700 20px sans-serif; color: #ccc">
-        <?php echo $Article->autor; ?>
+        <?php echo $article->autor; ?>
     </p>
 </body>
 </html>

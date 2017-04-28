@@ -2,10 +2,15 @@
 
 namespace App\Models;
 
-use App\Db;
 use App\ModelAbstract;
 
-class Article extends ModelAbstract
+class Article
+    extends ModelAbstract
 {
     const TABLE = 'News';
+
+    public $authors_id;
+    public $title;
+    public $content;
+
 }

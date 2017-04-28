@@ -8,9 +8,10 @@
     <title>Document</title>
 </head>
 <body>
+    <p>АДМИН ПАНЕЛЬ: <a href="?page=admin">ВОЙТИ</a></p>
     <?php foreach($news as $article) { ?>
     <p style="font: 700 20px sans-serif">
-        <a href="?page=Article&id=<?php echo $article->id; ?>">
+        <a href="?page=News&id=<?php echo $article->id; ?>">
             <?php echo $article->title; ?>
         </a>
     </p>

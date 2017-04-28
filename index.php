@@ -4,16 +4,17 @@ require 'autoload.php';
 
 if (isset($_GET['page'])) {
     $class_name = $_GET['page'];
-    $namespace = 'App\Controllers\\' . $class_name;
 
-    $class = new $namespace();
-    $func = 'get' . $class_name;
-    $$class_name = $class->$func();
+    $page = 'App\Controllers\\' . $class_name;
 
-    include __DIR__ . '/App/Views/' . $class_name . '.php';
-} else {
+    $page = new $page;
+    $page->getArticle();
+    } else {
     $news = new App\Controllers\News();
-    $news = $news->getNews();
-    include __DIR__ . '/App/Views/index.php';
-}
-?>
+    $news->getNews();
+
+
+    $t = new \App\Tests\Tests();
+    $r = $t->ins();
+    var_dump($r);
+    }
